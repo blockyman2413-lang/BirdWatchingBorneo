@@ -1,0 +1,236 @@
+/* BOOK NOW PAGE */
+
+.book-hero {
+    background: linear-gradient(135deg, #24351f, #496438);
+    color: white;
+    border-radius: 24px;
+    padding: 70px 55px;
+    text-align: center;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.18);
+}
+
+.book-hero .small-title {
+    color: #e9d982;
+}
+
+.book-hero h2 {
+    font-size: 58px;
+    line-height: 1.08;
+    margin-bottom: 25px;
+}
+
+.book-hero p {
+    max-width: 780px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.tour-summary {
+    margin-top: 35px;
+    background: #fffdf6;
+    border-radius: 24px;
+    padding: 45px;
+    display: grid;
+    grid-template-columns: 1.4fr 0.6fr;
+    gap: 35px;
+    align-items: center;
+    border: 1px solid rgba(214,197,128,0.65);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.summary-text h2 {
+    font-size: 44px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.summary-text p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.summary-price {
+    background: #f7f1e6;
+    border-radius: 20px;
+    padding: 35px;
+    text-align: center;
+    border: 1px solid rgba(214,197,128,0.65);
+}
+
+.summary-price h3 {
+    font-size: 42px;
+    color: #496438;
+    margin-bottom: 10px;
+}
+
+.summary-price p {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* CONTACT BARS */
+
+.booking-contact {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+.contact-bar {
+    text-decoration: none;
+    color: white;
+    border-radius: 18px;
+    padding: 28px 32px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    transition: 0.3s;
+}
+
+.contact-bar:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 32px rgba(0,0,0,0.18);
+}
+
+.contact-bar span {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.contact-bar p {
+    max-width: 650px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: right;
+}
+
+/* BAR COLOURS */
+
+.whatsapp-bar {
+    background: #25D366;
+}
+
+.call-bar {
+    background: #b9473e;
+}
+
+.facebook-bar {
+    background: #1877F2;
+}
+
+.email-bar {
+    background: #b9473e;
+}
+
+.contact-page-bar {
+    background: #324824;
+}
+
+/* =========================
+   BOOK NOW MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .book-hero {
+        padding: 45px 30px;
+        text-align: center;
+    }
+
+    .book-hero h2 {
+        font-size: 40px;
+        line-height: 1.1;
+    }
+
+    .book-hero p {
+        font-size: 15px;
+        max-width: 620px;
+        margin: 15px auto 0;
+    }
+
+    .tour-summary {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 30px;
+    }
+
+    .summary-text h2 {
+        font-size: 34px;
+        line-height: 1.1;
+    }
+
+    .summary-text p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .contact-bar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 18px;
+        padding: 24px;
+    }
+
+    .contact-bar p {
+        text-align: center;
+        font-size: 15px;
+    }
+}
+
+
+/* =========================
+   SMALL PHONE
+========================= */
+
+@media (max-width: 500px) {
+
+    .book-hero {
+        padding: 35px 20px;
+    }
+
+    .book-hero h2 {
+        font-size: 32px;
+    }
+
+    .book-hero p {
+        font-size: 14px;
+    }
+
+    .tour-summary {
+        padding: 22px;
+        gap: 22px;
+    }
+
+    .summary-text h2 {
+        font-size: 28px;
+    }
+
+    .summary-text p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .contact-bar {
+        padding: 20px;
+        border-radius: 18px;
+    }
+
+    .contact-bar p {
+        font-size: 14px;
+    }
+
+    .contact-bar .main-btn {
+        width: 100%;
+        text-align: center;
+    }
+}

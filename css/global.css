@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: #f7f1e6;
+    color: #24351f;
+}
+
+/* HERO */
+
+.hero {
+    width: 100%;
+    height: 360px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.green-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(48, 75, 39, 0.52);
+}
+
+.hero-content {
+    position: absolute;
+    inset: 0;
+    padding: 35px 70px;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BRAND AREA */
+
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.company-logo {
+    width: 170px;
+    height: 170px;
+    object-fit: contain;
+    filter: drop-shadow(0 8px 18px rgba(0,0,0,0.35));
+}
+
+.brand-right {
+    text-align: left;
+}
+
+.brand-text h1 {
+    font-size: 76px;
+    letter-spacing: 10px;
+    line-height: 0.9;
+    color: white;
+    text-shadow: 0 4px 14px rgba(0,0,0,0.45);
+}
+
+.brand-text h2 {
+    margin-top: 12px;
+    font-size: 36px;
+    letter-spacing: 8px;
+    color: white;
+    text-shadow: 0 4px 14px rgba(0,0,0,0.45);
+}
+
+.brand-text p {
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+    letter-spacing: 6px;
+    font-size: 14px;
+    color: white;
+    text-shadow: 0 4px 14px rgba(0,0,0,0.45);
+}
+
+.hero-text {
+    margin-top: 12px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+    color: white;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.45);
+}
+
+/* NAVBAR */
+
+.navbar {
+    width: 100%;
+    min-height: 70px;
+    background: rgba(74, 98, 57, 0.98);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    font-family: Arial, sans-serif;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 24px 0 8px;
+}
+
+.navbar a:hover,
+.navbar .active {
+    border-bottom: 3px solid #e9d982;
+}
+
+/* MAIN CONTAINER */
+
+.main-container {
+    max-width: 1400px;
+    margin: 35px auto;
+    padding: 0 40px;
+}
+
+/* SMALL TITLE */
+
+.small-title {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #60784c;
+    margin-bottom: 20px;
+}
+
+/* SHARED BUTTON */
+
+.main-btn {
+    display: inline-block;
+    background: #496438;
+    color: white;
+    text-decoration: none;
+    padding: 16px 32px;
+    border-radius: 30px;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+}
+
+.main-btn:hover {
+    background: #324824;
+}
+
+/* SHARED ENDING SECTION */
+
+.ending-section {
+    margin-top: 40px;
+    padding: 70px 40px;
+    text-align: center;
+    background: #496438;
+    color: white;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.ending-section h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.ending-section p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.ending-section .main-btn {
+    background: #e9d982;
+    color: #24351f;
+}
+
+.ending-section .main-btn:hover {
+    background: #d8c768;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+    .hero {
+        height: 320px;
+    }
+
+    .hero-content {
+        padding: 30px 25px;
+    }
+
+    .brand {
+        gap: 22px;
+    }
+
+    .company-logo {
+        width: 110px;
+        height: 110px;
+    }
+
+    .brand-text h1 {
+        font-size: 54px;
+        letter-spacing: 6px;
+    }
+
+    .brand-text h2 {
+        font-size: 25px;
+        letter-spacing: 5px;
+    }
+
+    .brand-text p {
+        font-size: 11px;
+        letter-spacing: 3px;
+    }
+
+    .hero-text {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .navbar {
+        min-height: auto;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+        gap: 28px;
+        padding: 16px 25px;
+        scrollbar-width: none;
+    }
+
+    .navbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .navbar a {
+        flex: 0 0 auto;
+        padding: 8px 0;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .main-container {
+        padding: 0 25px;
+    }
+
+    .ending-section {
+        padding: 55px 30px;
+    }
+
+    .ending-section h2 {
+        font-size: 36px;
+    }
+
+    .ending-section p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero {
+        height: 260px;
+    }
+
+    .hero-content {
+        padding: 22px 18px;
+    }
+
+    .brand {
+        gap: 14px;
+    }
+
+    .company-logo {
+        width: 75px;
+        height: 75px;
+    }
+
+    .brand-text h1 {
+        font-size: 38px;
+        letter-spacing: 4px;
+    }
+
+    .brand-text h2 {
+        margin-top: 6px;
+        font-size: 18px;
+        letter-spacing: 3px;
+    }
+
+    .brand-text p {
+        margin-top: 6px;
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+    .hero-text {
+        margin-top: 8px;
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    .navbar {
+        gap: 24px;
+        padding: 14px 22px;
+    }
+
+    .navbar a {
+        font-size: 10px;
+    }
+
+    .main-container {
+        padding: 0 18px;
+    }
+
+    .ending-section {
+        padding: 45px 22px;
+    }
+
+    .ending-section h2 {
+        font-size: 30px;
+    }
+}

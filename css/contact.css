@@ -1,0 +1,289 @@
+/* CONTACT PAGE */
+
+.contact-wrapper {
+    background: #fffdf6;
+    border-radius: 22px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: stretch;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+/* LEFT SIDE */
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info h2 {
+    font-size: 54px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.contact-intro {
+    max-width: 530px;
+    margin: 0 auto 30px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.contact-detail {
+    background: #f7f1e6;
+    padding: 18px 22px;
+    border-radius: 14px;
+    margin-bottom: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.contact-detail:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.contact-detail h3 {
+    color: #496438;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.contact-detail p {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    word-break: break-word;
+}
+
+/* FACEBOOK BAR */
+
+.facebook-banner {
+    margin-top: 28px;
+    background: #1877F2;
+    border-radius: 18px;
+    padding: 28px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+    width: 100%;
+}
+
+.facebook-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+}
+
+.facebook-icon {
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
+    border-radius: 50%;
+    background: white;
+    color: #1877F2;
+    font-size: 46px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.facebook-banner h3 {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.facebook-banner p {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 14px;
+    max-width: 360px;
+}
+
+.facebook-btn {
+    background: white;
+    color: #1877F2;
+    text-decoration: none;
+    padding: 14px 26px;
+    border-radius: 40px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.facebook-btn:hover {
+    transform: translateY(-3px);
+    background: #f2f2f2;
+}
+
+/* RIGHT SIDE */
+
+.contact-form-box {
+    background: #496438;
+    color: white;
+    border-radius: 18px;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-form-box h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contact-form-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-box label {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.contact-form-box input,
+.contact-form-box textarea {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 22px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.contact-form-box textarea {
+    height: 190px;
+    resize: vertical;
+}
+
+.contact-form-box .main-btn {
+    border: none;
+    cursor: pointer;
+    background: #e9d982;
+    color: #24351f;
+    transition: 0.3s;
+}
+
+.contact-form-box .main-btn:hover {
+    background: #d8c768;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   CONTACT MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 30px;
+    }
+
+    .contact-info h2 {
+        font-size: 38px;
+        line-height: 1.1;
+    }
+
+    .contact-info p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .contact-form {
+        padding: 25px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 15px;
+    }
+
+    .facebook-banner {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+        gap: 22px;
+        padding: 28px;
+    }
+
+    .facebook-left {
+        flex-direction: column;
+        text-align: center;
+        gap: 14px;
+    }
+
+    .facebook-banner p {
+        max-width: 100%;
+        font-size: 15px;
+    }
+
+    .facebook-btn {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+/* =========================
+   SMALL PHONE
+========================= */
+
+@media (max-width: 500px) {
+
+    .contact-wrapper {
+        padding: 22px;
+        gap: 25px;
+    }
+
+    .contact-info h2 {
+        font-size: 30px;
+    }
+
+    .contact-info p {
+        font-size: 14px;
+    }
+
+    .contact-form {
+        padding: 20px;
+        border-radius: 18px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 13px 14px;
+        font-size: 14px;
+    }
+
+    .facebook-banner {
+        padding: 22px;
+        border-radius: 18px;
+    }
+
+    .facebook-banner h3 {
+        font-size: 22px;
+    }
+
+    .facebook-banner p {
+        font-size: 14px;
+    }
+
+    .facebook-btn {
+        padding: 14px 22px;
+        font-size: 12px;
+    }
+}
